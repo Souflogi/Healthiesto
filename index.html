@@ -5,38 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./general.css">
     <link rel="stylesheet" href="./style.css">
     <title>OmniFood</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header flex galss-bg">
         <div class="logo"><img src="./img/omnifood-logo.png" alt=""></div>
         <nav>
-            <ul class="primary-navigation">
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul class="main-nav flex ">
+                <li><a class="main-nav-link" href="#">nav item</a></li>
+                <li><a class="main-nav-link" href="#">nav item</a></li>
+                <li><a class="main-nav-link" href="#">nav item</a></li>
+                <li><a class="main-nav-link" href="#">nav item</a></li>
+
             </ul>
         </nav>
     </header>
-    <section class="section-hero">
-        <div class="container grid" style="--margin-block :6rem">
-            <div class="hero-text-box v-flow" style="--v-gap :4rem">
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="section-hero  grid">
+
+            <div class="hero-text-box v-flow">
                 <h1 class="heading-primary">looking good, fresh, healthy and dilevred fast!</h1>
                 <p class="hero-description">
                     The smart 365-days-per-year food subscription that will make you eat healthy
                     again. Tailored to your
                     personal tastes and
                     nutritional needs.
-
                 <div>
-                    <a href="#" class="btn btn-full margin-r" style="--mr:4rem">Let's go!</a>
+                    <a href="#" class="btn btn-full margin-r" style="--mr:4rem">Start Now</a>
                     <a href="#" class="btn btn-outline">Learn More &darr;</a>
                 </div>
 
                 <div class="delivery">
-                    <div class="delivery-imgs flex" style="--flex-gap:1rem">
+                    <div class="delivery-imgs flex galss-bg" style="--flex-gap:1rem">
                         <img src="./img/customers/customer-1.jpg" alt="face1">
                         <img src="./img/customers/customer-2.jpg" alt="face2">
                         <img src="./img/customers/customer-3.jpg" alt="face3">
@@ -48,12 +54,79 @@
                 </div>
 
             </div>
-            <div class="hero-image-box">
+            <div class="hero-image-box galss-bg">
                 <img src="img/hero.jpg" alt="hunny spelt on paincakes" class="hero-image">
             </div>
-        </div>
-    </section>
 
+        </section>
+
+
+        <!-- FEATURED IN SECTION -->
+
+
+        <section class="section-featured">
+            <div class="container v-flow">
+                <h2 class="heading-secondary underline">As featured in</h2>
+                <div class="logos grid">
+                    <img src="./img/logos/business-insider.png" alt="" srcset="">
+                    <img src="./img/logos/forbes.png" alt="" srcset="">
+                    <img src="./img/logos/techcrunch.png" alt="" srcset="">
+                    <img src="./img/logos/the-new-york-times.png" alt="" srcset="">
+                    <img src="./img/logos/usa-today.png" alt="" srcset="">
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS SECTION -->
+
+        <section class="section-how galss-bg">
+            <div class="container">
+                <span class="subheading underline">How it works</span>
+                <br />
+                <h2 class="heading-secondary underline">Healthy meal in easy 3 steps</h2>
+            </div>
+            <div class="steps container grid">
+                <div class="step-text-box  flex">
+                    <p class="step-number">01</p>
+                    <h3 class="heading-tertiary underline">Tell us what you like (and what not):</h3>
+                    <p class="step-text">
+                        Never again waste time thinking about what to eat! Omnifood AI will create a 100%
+                        personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins
+                        you need, no matter
+                        what diet you follow!
+                    </p>
+                </div>
+                <div class="step-img">
+                    <img src="./img/app/app-screen-1.png" alt="phone app screenshot 1">
+                </div>
+                <div class="step-img">
+                    <img src="./img/app/app-screen-2.png" alt="phone app screenshot 1">
+
+                </div>
+                <div class=" step-text-box flex">
+                    <p class="step-number">02</p>
+                    <h3 class="heading-tertiary underline">Approve your weekly meal plan:</h3>
+                    <p class="step-text">
+                        Once per week, approve the meal plan generated for you by Omnifood AI. You can change
+                        ingredients, swap entire meals, or even add your own recipes.
+                    </p>
+                </div>
+                <div class="step-text-box  flex">
+                    <p class="step-number">03</p>
+                    <h3 class="heading-tertiary underline">Receive meals at convenient time:</h3>
+                    <p class="step-text">
+                        Never again waste time thinking about what to eat! Omnifood AI will create a 100%
+                        personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins
+                        you need, no matter
+                        what diet you follow!
+                    </p>
+                </div>
+                <div class="step-img">
+                    <img src="./img/app/app-screen-3.png" alt="phone app screenshot 1">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
