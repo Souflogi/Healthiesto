@@ -186,7 +186,7 @@
 /***********************/
 
 .section-how {
-  padding: 8rem 0;
+  padding: 2rem 0;
   position: relative;
   overflow: hidden;
   border-bottom: 1px hsl(var(--clr-green), 0.5) solid;
@@ -267,7 +267,7 @@
 
 .step-img img {
   display: block;
-  width: 70%;
+  width: 60%;
   object-fit: cover;
   margin: 0 auto;
 }
