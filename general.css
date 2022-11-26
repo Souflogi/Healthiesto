@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
+
 :root {
   /************/
   /*Colors*/
@@ -11,13 +12,13 @@
   accent: #f09042;
   white: #f8f7f7; */
 
-  /* --clr : hsl(27, 85%, 60%);  */
+  --clr: hsl(204, 60%, 95%);
 
   --clr-dark: 231, 29%, 22%;
-  --clr-grey: 202, 17%, 39%;
+  --clr-gray: 202, 17%, 39%;
   --clr-green: 146, 20%, 78%;
-  --clr-accent: 27, 85%, 60%;
-  --clr-white: 20, 10%, 97%;
+  --clr-accent: 80, 73%, 38%;
+  --clr-white: 204, 60%, 95%;
 
   /* background-color: #bbd2c5;
 background-image: linear-gradient(225deg, #bbd2c5 0%, #536976 46%, #292e49 100%);
@@ -55,7 +56,7 @@ background-image: linear-gradient(225deg, #bbd2c5 0%, #536976 46%, #292e49 100%)
   --fw-xsmall: 100;
   --fw-small: 200;
   --fw-meduim: 400;
-  --fw-larg: 600;
+  --fw-larg: 700;
   --fw-xlarg: 800;
   --fw-xxlarg: 900;
 
@@ -85,8 +86,7 @@ background-image: linear-gradient(225deg, #bbd2c5 0%, #536976 46%, #292e49 100%)
 }
 
 @media screen and (min-width: 50rem) {
-  :root {
-  }
+  :root {}
 }
 
 html {
@@ -94,18 +94,17 @@ html {
   /* 1rem = 10px */
   font-size: 62.5%;
 }
+
 body {
   font-family: var(--ff-primary);
   line-height: var(--lh-400);
   font-weight: 400;
   color: hsl(var(--clr-white));
   background-color: #bbd2c5;
-  background-image: linear-gradient(
-    225deg,
-    #bbd2c5 0%,
-    #536976 30%,
-    #292e49 100%
-  );
+  background-image: linear-gradient(-90deg,
+      #bbd2c5 0%,
+      #536976 30%,
+      #292e49 100%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -147,16 +146,17 @@ button {
   grid-template-columns: repeat(var(--columns, 2), minmax(min-content, 1fr));
   gap: var(--grid-g, 2rem);
 }
+
 .flex {
   display: flex;
   gap: var(--flex-gap, 0);
 }
 
-.v-flow > *:where(:not(:last-child)) {
+.v-flow>*:where(:not(:last-child)) {
   margin-block-end: var(--v-gap, 2rem);
 }
 
-.h-flow > *:where(:not(:last-child)) {
+.h-flow>*:where(:not(:last-child)) {
   margin-inline-end: var(--h-gap, 2rem);
 }
 
@@ -164,12 +164,22 @@ button {
   margin-right: var(--mr, 2rem);
 }
 
+.txa-center {
+  text-align: center;
+}
+
 .heading-primary {
-  font-family: var(--ff-heading);
   font-size: var(--fs-800);
-  font-weight: var(--fw-larg);
+  font-weight: var(--fw-xlarg);
   line-height: var(--lh-450);
   letter-spacing: var(--ls-300);
+}
+
+.heading-primary span {
+  border: 2px solid hsl(var(--clr-accent), 0.6);
+  font-size: var(--fs-750);
+  padding: 0 0.3rem;
+  border-radius: var(--brs-400);
   color: hsl(var(--clr-accent));
 }
 
@@ -181,17 +191,34 @@ button {
 }
 
 .heading-secondary {
-  font-size: var(--fs-700);
-  color: hsl(var(--clr-dark), 0.9);
+  font-size: var(--fs-650);
 }
+
 .heading-tertiary {
   font-size: var(--fs-550);
 }
+
 .subheading {
   display: block;
   font-size: var(--fs-400);
   text-transform: uppercase;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.clr-dark {
+  color: hsl(var(--clr-dark));
+}
+
+.clr-accent {
+  color: hsl(var(--clr-accent));
+}
+
+.clr-gray {
+  color: hsl(var(--clr-gray));
+}
+
+.clr-green {
+  color: hsl(var(--clr-green));
 }
 
 .btn:link,
@@ -211,20 +238,16 @@ button {
 .btn-full:visited {
   color: var(--clr-white);
   /* background-color: hsl(var(--clr-white), 0.2); */
-  background-image: linear-gradient(
-    225deg,
-    rgb(244, 245, 244, 0.2) 0%,
-    rgb(83, 105, 118, 0.2) 30%
-  );
+  background-image: linear-gradient(225deg,
+      rgb(244, 245, 244, 0.2) 0%,
+      rgb(83, 105, 118, 0.2) 30%);
 }
 
 .btn-full:hover {
   background-color: hsl(var(--clr-accent), 0.1);
-  background-image: linear-gradient(
-    100deg,
-    rgb(83, 105, 118, 0.2) 0%,
-    rgb(244, 245, 244, 0.2) 30%
-  );
+  background-image: linear-gradient(100deg,
+      rgb(83, 105, 118, 0.2) 0%,
+      rgb(244, 245, 244, 0.2) 30%);
 }
 
 .btn-outline:visited,
@@ -232,6 +255,7 @@ button {
   color: var(--clr-white);
   border: hsl(var(--clr-white), 0.1) solid 1px;
 }
+
 .btn-outline:hover {
   color: hsl(var(--clr-accent));
   border-color: hsl(var(--clr-accent));
@@ -250,12 +274,14 @@ button {
   position: relative;
   display: inline-block;
 }
+
 .underline::after {
   content: "";
   position: absolute;
   height: 1px;
   width: 70%;
-  bottom: -20%;
+  bottom: -1rem;
   left: 0;
   background-color: hsl(var(--clr-white), 0.4);
+  background-color: currentColor;
 }

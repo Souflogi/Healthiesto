@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./general.css">
     <link rel="stylesheet" href="./style.css">
     <title>OmniFood</title>
@@ -30,7 +33,7 @@
         <section class="section-hero  grid">
 
             <div class="hero-text-box v-flow">
-                <h1 class="heading-primary">looking good, fresh, healthy and dilevred fast!</h1>
+                <h1 class="heading-primary clr-white">looking good, fresh, <span>healthy</span> and dilevred fast!</h1>
                 <p class="hero-description">
                     The smart 365-days-per-year food subscription that will make you eat healthy
                     again. Tailored to your
@@ -60,17 +63,16 @@
 
         </section>
 
-
         <!-- FEATURED IN SECTION -->
-
 
         <section class="section-featured">
             <div class="container v-flow">
-                <h2 class="heading-secondary underline">As featured in</h2>
+                <h2 class="featured-heading  ">As featured in</h2>
                 <div class="logos grid">
-                    <img src="./img/logos/business-insider.png" alt="" srcset="">
+
                     <img src="./img/logos/forbes.png" alt="" srcset="">
                     <img src="./img/logos/techcrunch.png" alt="" srcset="">
+                    <img src="./img/logos/business-insider.png" alt="" srcset="">
                     <img src="./img/logos/the-new-york-times.png" alt="" srcset="">
                     <img src="./img/logos/usa-today.png" alt="" srcset="">
                 </div>
@@ -79,11 +81,11 @@
 
         <!-- HOW IT WORKS SECTION -->
 
-        <section class="section-how galss-bg">
+        <section class="section-how">
             <div class="container">
-                <span class="subheading underline">How it works</span>
+                <span class="subheading underline clr-accent">How it works</span>
                 <br />
-                <h2 class="heading-secondary underline">Healthy meal in easy 3 steps</h2>
+                <h2 class="heading-secondary clr-dark underline">Healthy meal in easy 3 steps</h2>
             </div>
             <div class="steps container grid">
                 <div class="step-text-box  flex">
@@ -126,7 +128,182 @@
                 </div>
             </div>
         </section>
+
+        <!-- MEALS SECTION -->
+
+        <section class="section-meals v-flow">
+            <div class="container txa-center">
+                <span class="subheading   clr-accent">simple meals</span>
+                <br />
+                <h2 class="heading-secondary clr-green  ">Omnifood AI chooses from 5,000+ recipes</h2>
+            </div>
+            <div class="container grid">
+                <div class="meal-card v-flow  ">
+                    <div class="meal-img">
+                        <img src="./img/meals/meal-2.jpg" alt="Japonese Gyozas" srcset="">
+
+                        <div class="tags">
+                            <span class="tag vegan">#Vegan </span>
+                            <span class="tag paleo">#Paleo</span>
+                        </div>
+                    </div>
+
+                    <p class="meal-title">Avocado Salad</p>
+                    <ul class="meal-attributes v-flow">
+                        <li>
+                            <ion-icon class="icon" name="flame-outline"></ion-icon> <span><strong>400</strong>
+                                Calories</span>
+                        </li>
+                        <li>
+                            <ion-icon class="icon" name="nutrition-outline"></ion-icon> <span><strong>92</strong>
+                                NutriScore &#174</span>
+                        </li>
+                        <li>
+                            <ion-icon class="icon" name="star-half-outline"></ion-icon> <span><strong>4.8</strong>
+                                Rating</span>
+                        </li>
+                        <li>
+                            <ion-icon class="icon" name="people-outline"></ion-icon> <span><strong>440+</strong>
+                                Reviews</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="meal-card v-flow">
+                    <div class="meal-img">
+                        <img src="./img/meals/meal-1.jpg" alt="Japonese Gyozas" srcset="">
+                        <div class="tags"><span class="tag vege">#Vegetarian</span></>
+                        </div>
+                    </div>
+                    <p class="meal-title ">Japanese Gyozas</p>
+                    <ul class="meal-attributes v-flow">
+                        <li>
+                            <ion-icon class="icon" name="flame-outline"></ion-icon> <span><strong>650</strong>
+                                Calories</span>
+                        </li>
+                        <li>
+                            <ion-icon class="icon" name="nutrition-outline"></ion-icon> <span><strong>74</strong>
+                                NutriScore
+                                &#174</span>
+                        </li>
+                        <li>
+                            <ion-icon class="icon" name="star-half-outline"></ion-icon> <span><strong>4.9</strong>
+                                Rating</span>
+                        </li>
+                        <li>
+                            <ion-icon class="icon" name="people-outline"></ion-icon> <span><strong>500+</strong>
+                                Reviews</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- DIETS -->
+
+                <div class="diets v-flow">
+                    <h3 class="heading-tertiary underline"> Works with any diet</h3>
+                    <ul class="diets-list v-flow">
+                        <li>
+                            <ion-icon class="icon" name="checkmark-circle-outline"></ion-icon><span>Vegetarian</span>
+                        </li>
+                        <li>
+                            <ion-icon class="icon" name="checkmark-circle-outline"></ion-icon><span>Pescatarian</span>
+                        </li>
+                        <li>
+                            <ion-icon class="icon" name="checkmark-circle-outline"></ion-icon><span>Gluten-free</span>
+                        </li>
+                        <li>
+                            <ion-icon class="icon" name="checkmark-circle-outline"></ion-icon><span>Lactose-free</span>
+                        </li>
+                        <li>
+                            <ion-icon class="icon" name="checkmark-circle-outline"></ion-icon><span>Keto</span>
+                        </li>
+                        <li>
+                            <ion-icon class="icon" name="checkmark-circle-outline"></ion-icon><span>Paleo</span>
+                        </li>
+                        <li>
+                            <ion-icon class="icon" name="checkmark-circle-outline"></ion-icon><span>Low FODMAP
+                        </li></span>
+                        <li>
+                            <ion-icon class="icon" name="checkmark-circle-outline"></ion-icon><span>Kid-friendly</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container all-recipies">
+                <a class="link underline" href="#">Navigate all recipies &rarr;</a>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+
+        <section class="section-testimonials ">
+            <div class="testimonials-container">
+                <div class="testimonilas-title"><span class="subheading   clr-accent">simple meals</span>
+                    <br />
+                    <h2 class="heading-secondary clr-white underline ">Omnifood AI chooses from 5,000+ recipes</h2>
+                </div>
+
+                <div class="testimonials">
+
+                    <figure class="testimonial">
+                        <i class="icon fa-sharp fa-solid fa-quote-right"></i>
+                        <div class="img"><img src="./img/customers/ben.jpg" alt="customer"></div>
+                        <blockquote> The AI algorithm is crazy good, it chooses the right meals for me every time.It's
+                            amazing not to worry about food anymore!
+                        </blockquote>
+                        <p class="name">--Ben Hadley</p>
+                    </figure>
+                    <figure class="testimonial">
+                        <i class="icon fa-sharp fa-solid fa-quote-right"></i>
+                        <div class="img"><img src="./img/customers/dave.jpg" alt="customer"></div>
+                        <blockquote> Inexpensive, healthy and great-tasting meals, without even having to order
+                            manually! It feels truly magical.
+                        </blockquote>
+                        <p class="name">--Dave
+                            Bryson</p>
+                    </figure>
+                    <figure class="testimonial">
+                        <i class="icon fa-sharp fa-solid fa-quote-right"></i>
+                        <div class="img"><img src="./img/customers/steve.jpg" alt="customer"></div>
+                        <blockquote> Omnifood is a life saver! I just started a company, so there's no time for cooking.
+                            I couldn't live without my daily
+                            meals now!
+                        </blockquote>
+                        <p class="name">--Steve Miller</p>
+                    </figure>
+                    <figure class="testimonial">
+                        <i class="icon fa-sharp fa-solid fa-quote-right"></i>
+                        <div class="img"><img src="./img/customers/hannah.jpg" alt="customer"></div>
+                        <blockquote> I got Omnifood for the whole family, and it frees up so much time! Plus, everything
+                            is
+                            organic and vegan and without
+                            plastic.
+
+                        </blockquote>
+                        <p class="name">--Hannah Smith</p>
+                    </figure>
+                </div>
+            </div>
+            <div class="gallery">
+
+                <figure class="gallery-item"><img src="./img/gallery/gallery-1.jpg" alt="food image"></figure>
+                <figure class="gallery-item"><img src="./img/gallery/gallery-2.jpg" alt="food image"></figure>
+                <figure class="gallery-item"><img src="./img/gallery/gallery-3.jpg" alt="food image"></figure>
+                <figure class="gallery-item"><img src="./img/gallery/gallery-4.jpg" alt="food image"></figure>
+                <figure class="gallery-item"><img src="./img/gallery/gallery-5.jpg" alt="food image"></figure>
+                <figure class="gallery-item"><img src="./img/gallery/gallery-6.jpg" alt="food image"></figure>
+                <figure class="gallery-item"><img src="./img/gallery/gallery-7.jpg" alt="food image"></figure>
+                <figure class="gallery-item"><img src="./img/gallery/gallery-8.jpg" alt="food image"></figure>
+                <figure class="gallery-item"><img src="./img/gallery/gallery-9.jpg" alt="food image"></figure>
+                <figure class="gallery-item"><img src="./img/gallery/gallery-10.jpg" alt="food image"></figure>
+                <figure class="gallery-item"><img src="./img/gallery/gallery-11.jpg" alt="food image"></figure>
+                <figure class="gallery-item"><img src="./img/gallery/gallery-12.jpg" alt="food image"></figure>
+
+            </div>
+        </section>
     </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
