@@ -12,12 +12,14 @@
   accent: #f09042;
   white: #f8f7f7; */
 
-  --clr: hsl(204, 60%, 95%);
+  --clr: hsl(12, 76%, 61%);
 
   --clr-dark: 231, 29%, 22%;
   --clr-gray: 202, 17%, 39%;
   --clr-green: 146, 20%, 78%;
-  --clr-accent: 80, 73%, 38%;
+  --clr-accent: 8,
+    76%,
+    61%;
   --clr-white: 204, 60%, 95%;
 
   /* background-color: #bbd2c5;
