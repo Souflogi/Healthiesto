@@ -12,7 +12,8 @@
   accent: #f09042;
   white: #f8f7f7; */
 
-  --clr: hsl(12, 76%, 61%);
+  --clr: #e76e50;
+  --clr-2: #282d48;
 
   --clr-dark: 231, 29%, 22%;
   --clr-gray: 202, 17%, 39%;
@@ -267,7 +268,7 @@ button {
 /*Componenets*/
 /**************/
 
-.galss-bg {
+.glass-bg {
   background-color: rgba(252, 252, 252, 0.24);
   backdrop-filter: blur(4px);
 }

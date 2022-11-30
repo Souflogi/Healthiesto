@@ -547,8 +547,12 @@ img {
 
 .section-pricing {
   padding: 6rem 0;
-  background-color: hsl(var(--clr-white), 0.85);
-  --v-gap: 3rem;
+  /* background-color: hsl(var(--clr-dark), 0.5); */
+  background-image: url(./img/Sprinkle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  --v-gap: 2rem;
 }
 
 .plans {
@@ -558,14 +562,16 @@ img {
 .pricing-plan {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 75%;
 }
 
 /* *** */
 .plan-head {
-  padding: 3rem 6rem 0 6rem;
+  padding: 1rem 6rem 0 6rem;
   position: relative;
   color: currentColor;
+  isolation: isolate;
+
 }
 
 .plan-head::after {
@@ -579,11 +585,11 @@ img {
   z-index: -1;
   transform: translateX(-50%);
   border-radius: 0 20% 0 0;
-  box-shadow: 2rem 2rem 4rem hsl(var(--clr-dark), .8);
+  box-shadow: 0 0 2rem 1rem hsl(var(--clr-dark), .6);
 }
 
 .plan-title {
-  font-size: var(--fs-650);
+  font-size: var(--fs-600);
   font-weight: var(--fw-small);
   letter-spacing: var(--ls-400);
   text-transform: uppercase;
@@ -593,9 +599,20 @@ img {
 
 .plan-price {
   text-align: center;
-  font-size: var(--fs-950);
+  font-size: var(--fs-900);
   font-weight: var(--fw-larg);
-  padding: 3rem 0;
+  padding: 2rem 0;
+}
+
+.plan-price span {
+  font-size: var(--fs-800);
+  font-weight: var(--fw-small);
+}
+
+.plan-desc {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: var(--fs-300);
 }
 
 /* *** */
@@ -606,6 +623,30 @@ img {
   background-color: currentColor;
   padding-block: 4rem;
   border-radius: 20% 0 0 0;
+  border: 1px solid hsl(var(--clr-white));
+  ;
+  z-index: 3;
+}
+
+.plan-tag {
+  position: relative;
+  overflow: hidden;
+}
+
+.plan-tag::before {
+  content: "best deal";
+  position: absolute;
+  font-size: var(--fs-450);
+  font-weight: var(--fw-xlarg);
+  text-transform: uppercase;
+  background-color: hsl(39, 79%, 59%);
+  padding: 1rem;
+  text-align: center;
+  transform: rotate(-45deg);
+  width: 70%;
+  right: -23%;
+  bottom: 7%;
+  border: 1px solid hsl(var(--clr-white));
 
 }
 
@@ -633,16 +674,106 @@ img {
 .plan-features span {}
 
 
-
-.plan-btn {
+.plan-btn:link,
+.plan-btn:visited {
   margin-top: 4rem;
   text-decoration: none;
-  font-size: var(--fs-550);
+  font-size: var(--fs-500);
   text-transform: uppercase;
-  letter-spacing: var(--ls-300);
+  letter-spacing: var(--ls-200);
   color: hsl(var(--clr-white));
   border: 3px solid currentColor;
   border-radius: var(--brs-500);
   padding: 1.2rem 2rem;
+  transition: all .2s ease;
+  overflow: hidden;
+  position: relative;
+}
 
+.plan-btn:hover {
+  color: currentColor;
+  /* transform: scale(1.09); */
+}
+
+.plan-btn::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0px;
+  inset: 0;
+  z-index: -1;
+  background-color: hsl(var(--clr-white));
+  transition: all .2s ease-in-out;
+}
+
+.plan-btn:hover::after {
+  width: 100%;
+}
+
+/************/
+.plan-details {
+  text-align: center;
+  font-size: var(--fs-450);
+  font-weight: var(--fw-larg);
+  letter-spacing: var(--ls-300);
+  color: hsl(var(--clr-dark));
+  background-color: hsl(var(--clr-white), .8);
+  padding: 1rem 0;
+  border-radius: 1rem;
+}
+
+/************/
+
+.features {
+  --columns: 4;
+  --grid-g: 4rem;
+  color: hsl(var(--clr-dark));
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: hsl(var(--clr-white), .9);
+  text-align: center;
+  border: 1px solid currentColor;
+  border-radius: var(--brs-500);
+}
+
+.feature-icon {
+  background-color: hsl(var(--clr-accent), .2);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.feature-icon .icon {
+  font-size: var(--fs-650);
+  color: hsl(var(--clr-accent));
+}
+
+.feature-title {
+  font-size: var(--fs-500);
+}
+
+.feature-description {
+  font-size: var(--fs-300);
+  line-height: var(--lh-500);
+  font-weight: var(--fw-larg);
+  color: hsl(var(--clr-dark), .8);
+}
+
+/************/
+
+.plan-details {
+  text-align: center;
+  font-size: var(--fs-450);
+  font-weight: var(--fw-larg);
+  letter-spacing: var(--ls-300);
+  color: hsl(var(--clr-dark));
+  background-color: hsl(var(--clr-white), .8);
+  padding: 1rem 0;
+  border-radius: 1rem;
 }
