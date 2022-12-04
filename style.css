@@ -135,16 +135,16 @@
 
 .hero-image-box {
   max-width: 100%;
-  padding: 2.5rem;
   border-radius: var(--brs-400);
-  box-shadow: 0 4px 6px hsl(231, 28%, 22%, 0.1);
   position: relative;
+  /* padding: 2.5rem; */
+  /* box-shadow: 0 4px 6px hsl(231, 28%, 22%, 0.1); */
   /* justify-self: end; */
   /* border: hsl(var(--clr-green), 0.5) 1px solid; */
 }
 
 .hero-image {
-  width: 100%;
+  width: 120 %;
   border-radius: inherit;
   object-fit: cover;
   opacity: 0.9;
@@ -776,4 +776,117 @@ img {
   background-color: hsl(var(--clr-white), .8);
   padding: 1rem 0;
   border-radius: 1rem;
+}
+
+/***********************/
+/* CTA SECTION*/
+/***********************/
+.section-cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: hsl(var(--clr-accent));
+}
+
+.section-cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem hsl(var(--clr-accent), .5);
+}
+
+.cta-text-box {
+  /* align-self: center; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  max-width: 120rem;
+  justify-self: center;
+  padding: 8rem 2rem;
+  background-color: hsl(var(--clr-dark), .95);
+  border-radius: var(--brs-500);
+  border: 4px solid hsl(var(--clr-white), .6);
+  margin: 2rem;
+}
+
+.cta-text {
+  font-size: var(--fs-450);
+  line-height: var(--lh-500);
+  letter-spacing: var(--ls-200);
+  margin-bottom: 6rem;
+
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.5rem;
+  column-gap: 3.5rem;
+
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.form-control label {
+  font-size: var(--fs-400);
+  letter-spacing: var(--ls-200);
+  font-weight: var(--fw-larg);
+}
+
+.form-control input,
+.form-control select {
+  padding: 1rem 1.2rem;
+  font-size: var(--fs-400);
+  font-family: inherit;
+  color: hsl(var(--clr-dark));
+  border: none;
+  border-radius: var(--brs-400);
+  background-color: hsl(var(--clr-white), .8);
+  box-shadow: 0 0 .5rem hsl(var(--clr-dark), .3);
+
+}
+
+.form-control input {}
+
+.form-control select {}
+
+.cta-btn {
+  border: none;
+  border-radius: var(--brs-400);
+  align-self: end;
+  /* justify-self: center; */
+  font-size: var(--fs-400);
+  font-weight: var(--fw-larg);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-200);
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-accent));
+  padding: 1.5rem 3.5rem;
+  cursor: pointer;
+  position: relative;
+  transition: all .2s ease-in-out;
+}
+
+.cta-btn:hover {
+  background-color: hsl(var(--clr-accent), .8);
+}
+
+.cta-btn:active {
+  transform: scale(.9);
+  color: hsl(var(--clr-accent));
+  background-color: hsl(var(--clr-white));
+}
+
+
+/* ******* */
+.cta-img-box {
+  background-image: linear-gradient(to right, hsl(var(--clr-accent)), 20%, hsl(var(--clr-dark), .4)), url(./img/cta-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* border-radius: 50% 0 0 10%; */
 }
