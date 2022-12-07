@@ -15,14 +15,14 @@
 
 <body>
     <header class="header flex glass-bg">
-        <div class="logo"><img src="./img/omnifood-logo.png" alt=""></div>
+        <div class="logo"> <a href="#"><img src="./img/omnifood-logo.png" alt=""></a></div>
         <nav>
             <ul class="main-nav flex ">
-                <li><a class="main-nav-link" href="#">nav item</a></li>
-                <li><a class="main-nav-link" href="#">nav item</a></li>
-                <li><a class="main-nav-link" href="#">nav item</a></li>
-                <li><a class="main-nav-link" href="#">nav item</a></li>
-
+                <li><a class="main-nav-link" href="#">How it works</a></li>
+                <li><a class="main-nav-link" href="#">Meals</a></li>
+                <li><a class="main-nav-link" href="#">testimonials</a></li>
+                <li><a class="main-nav-link" href="#">Pricing</a></li>
+                <li><a class="btn btn-full" href="#">Try for free</a></li>
             </ul>
         </nav>
     </header>
@@ -81,16 +81,18 @@
 
         <!-- HOW IT WORKS SECTION -->
 
-        <section class="section-how">
+        <section class="section-how v-flow">
             <div class="container">
                 <span class="subheading underline clr-accent">How it works</span>
                 <br />
                 <h2 class="heading-secondary clr-white underline">Healthy meal in easy 3 steps</h2>
             </div>
-            <div class="steps container grid">
+            <div class="step container grid">
                 <div class="step-text-box  flex">
-                    <p class="step-number">01</p>
-                    <h3 class="heading-tertiary underline">Tell us what you like (and what not):</h3>
+                    <div class="step-head">
+                        <p class="step-number">01</p>
+                        <h3 class="heading-tertiary ">Tell us what you like (and what not):</h3>
+                    </div>
                     <p class="step-text">
                         Never again waste time thinking about what to eat! Omnifood AI will create a 100%
                         personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins
@@ -98,34 +100,46 @@
                         what diet you follow!
                     </p>
                 </div>
+
                 <div class="step-img">
                     <img src="./img/app/app-screen-1.png" alt="phone app screenshot 1">
                 </div>
+            </div>
+            <div class="step container grid">
                 <div class="step-img">
                     <img src="./img/app/app-screen-2.png" alt="phone app screenshot 1">
 
                 </div>
                 <div class=" step-text-box flex">
-                    <p class="step-number">02</p>
-                    <h3 class="heading-tertiary underline">Approve your weekly meal plan:</h3>
+                    <div class="step-head">
+                        <p class="step-number">02</p>
+                        <h3 class="heading-tertiary ">Approve your weekly meal plan:</h3>
+                    </div>
                     <p class="step-text">
                         Once per week, approve the meal plan generated for you by Omnifood AI. You can change
                         ingredients, swap entire meals, or even add your own recipes.
                     </p>
                 </div>
+            </div>
+            <div class="step container grid">
                 <div class="step-text-box  flex">
-                    <p class="step-number">03</p>
-                    <h3 class="heading-tertiary underline">Receive meals at convenient time:</h3>
+                    <div class="step-head">
+                        <p class="step-number">03</p>
+                        <h3 class="heading-tertiary ">Receive meals at convenient time:</h3>
+                    </div>
                     <p class="step-text">
                         Never again waste time thinking about what to eat! Omnifood AI will create a 100%
                         personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins
                         you need, no matter
                         what diet you follow!
                     </p>
+
+
                 </div>
                 <div class="step-img">
                     <img src="./img/app/app-screen-3.png" alt="phone app screenshot 1">
                 </div>
+            </div>
             </div>
         </section>
 
@@ -242,6 +256,8 @@
                     <br />
                     <h2 class="heading-secondary clr-white underline ">Omnifood AI chooses from 5,000+ recipes</h2>
                 </div>
+
+                <!-- testimonials -->
 
                 <div class="testimonials">
 
@@ -473,6 +489,71 @@
             <div class="cta-img-box" role="img" aria-label="customers enjoying food"></div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container grid footer-container">
+            <div class="logo-col">
+                <a class="logo" href="#">
+                    <img src="./img/omnifood-logo.png" alt="">
+                </a>
+
+                <ul class="social-links">
+                    <li><a href="#">
+                            <ion-icon class="icon" name="logo-facebook"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon class="icon" name="logo-instagram"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon class="icon" name="logo-twitter"></ion-icon>
+                        </a></li>
+                </ul>
+
+                <p class="copy-right">Copyriht &copy; 2023 by Soufiane Sammah, All rights reserved.</p>
+            </div>
+            <div class="address-col">
+                <p class="footer-heading">Contact us</p>
+                <address class="contacts">
+                    <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+
+                    <p>
+                        <a href="tel: 415-201-6370">415-201-6370
+                        </a>
+                        <br />
+                        <a href="mailto:hello@omnifood.com">hello@omnifood.com</a>
+                    </p>
+                </address>
+
+            </div>
+            <nav class="nav-col">
+                <p class="footer-heading">
+                    Account
+                </p>
+                <ul class="footer-nav">
+                    <li><a href="#">Create account</a></li>
+                    <li><a href="#">iOS app</a></li>
+                    <li><a href="#">Android app</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-col">
+                <p class="footer-heading">Company</p>
+                <ul class="footer-nav">
+                    <li><a href="#">About Omnifood</a></li>
+                    <li><a href="#">For Business</a></li>
+                    <li><a href="#">Cooking partners</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-col">
+                <p class="footer-heading">Help</p>
+                <ul class="footer-nav">
+                    <li><a href="#">Recipe directory</a></li>
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Privacy & terms</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
