@@ -204,7 +204,7 @@
   --grid-g: 4rem;
   align-items: center;
   justify-items: center;
-  /* background-color: hsl(var(--clr-dark), .6); */
+  background-image: linear-gradient(to top, hsla(var(--clr-accent), .8) 40%, rgba(255, 255, 255, 0) 10%);
   border-radius: var(--brs-500);
   border: 4px hsl(var(--clr-white), .6) solid;
 }
