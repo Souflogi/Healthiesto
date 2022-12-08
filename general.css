@@ -174,13 +174,13 @@ button {
 .heading-primary {
   font-size: var(--fs-800);
   font-weight: var(--fw-xlarg);
-  line-height: var(--lh-450);
+  line-height: var(--lh-500);
   letter-spacing: var(--ls-300);
 }
 
 .heading-primary span {
   border: 2px solid hsl(var(--clr-accent), 0.6);
-  font-size: var(--fs-750);
+  font-size: 90%;
   padding: 0 0.3rem;
   border-radius: var(--brs-400);
   color: hsl(var(--clr-accent));

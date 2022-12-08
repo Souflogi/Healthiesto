@@ -1,0 +1,27 @@
+/****************/
+/**General**/
+/****************/
+/* ~1330px */
+@media screen and (max-width: 83em) {
+    :root {
+        --fs-800: 4.4rem;
+    }
+}
+
+/* ~1200px */
+@media screen and (max-width: 75em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+/****************/
+/**HERO SECTION**/
+/****************/
+
+/* ~1330px */
+@media screen and (max-width: 83em) {
+    .section-hero {
+        max-width: 120rem;
+    }
+}
