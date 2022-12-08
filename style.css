@@ -200,12 +200,12 @@
 }
 
 .step-number {
-  font-size: 10rem;
+  font-size: 8rem;
   font-weight: var(--fw-xlarg);
   color: hsl(var(--clr-accent), 0.9);
   /* font-family: var(--ff-heading); */
   position: absolute;
-  top: -7.3rem;
+  top: -6rem;
 }
 
 .step-text {
@@ -221,7 +221,6 @@
 }
 
 .step-img {
-
   position: relative;
   z-index: 2;
   isolation: isolate;
@@ -249,7 +248,7 @@
 
 .section-meals {
   --columns: 3;
-  padding: 8rem 0;
+  padding: 4 rem 0;
   background-color: hsl(var(--clr-white), .95);
   color: hsl(var(--clr-dark));
 }
@@ -337,17 +336,6 @@ img {
   position: relative;
 }
 
-/* .meal-attributes::after {
-  content: "";
-  position: absolute;
-  height: 200%;
-  width: 100%;
-  top: 0;
-  right: -30%;
-  background-color: hsl(var(--clr-dark), 0.1);
-  z-index: -1;
-  border-radius: 50%;
-} */
 
 .meal-attributes li {
   display: flex;
@@ -705,9 +693,10 @@ img {
 /************/
 .plan-details {
   text-align: center;
-  font-size: var(--fs-450);
+  font-size: var(--fs-900);
   font-weight: var(--fw-larg);
   letter-spacing: var(--ls-300);
+  line-height: var(--lh-500);
   color: hsl(var(--clr-dark));
   background-color: hsl(var(--clr-white), .8);
   padding: 1rem 0;

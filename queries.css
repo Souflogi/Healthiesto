@@ -3,16 +3,34 @@
 /****************/
 /* ~1330px */
 @media screen and (max-width: 83em) {
-    :root {
-        --fs-800: 4.4rem;
+    html {
+        font-size: 60%;
+    }
+
+    .heading-primary {
+        font-size: var(--fs-750);
     }
 }
 
 /* ~1200px */
 @media screen and (max-width: 75em) {
     html {
-        font-size: 50%;
+        font-size: 55%;
     }
+
+    .heading-primary {
+        font-size: var(--fs-700);
+    }
+
+    .heading-secondary {
+        font-size: var(--fs-600);
+    }
+
+    .heading-tertiary {
+        font-size: var(--fs-500);
+        line-height: var(--fs-600);
+    }
+
 }
 
 /****************/
@@ -23,5 +41,47 @@
 @media screen and (max-width: 83em) {
     .section-hero {
         max-width: 120rem;
+        margin: 4rem auto;
+    }
+}
+
+/****************/
+/**HOW SECTION**/
+/****************/
+/* ~1200px */
+@media screen and (max-width: 75em) {
+
+
+
+    .step-img img {
+        width: 45%;
+    }
+
+    .step-head {
+        padding: 1.5rem;
+    }
+}
+
+/***********************/
+/* PRICING SECTION*/
+/***********************/
+/* ~1200px */
+@media screen and (max-width: 75em) {
+    .section-pricing {
+        padding: 3rem 0;
+    }
+
+    .plan-details {
+        font-size: var(--fs-300);
+    }
+}
+
+/**********************/
+/* FOOTER*/
+/*********************/
+/* ~1200px */
+@media screen and (max-width: 75em) {
+    .footer {
+        padding: 3rem 0;
     }
 }
