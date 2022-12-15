@@ -33,6 +33,33 @@
 
 }
 
+/* ~ 900px */
+@media screen and (max-width: 56em) {
+    html {
+        font-size: 50%;
+    }
+
+    /****************/
+    /**HEADER**/
+    /****************/
+    /* ~1330px */
+    @media screen and (max-width: 83em) {
+        .main-nav {
+            gap: 3rem;
+        }
+    }
+
+    /***********************/
+    /* FEATURED SECTION*/
+    /***********************/
+    /* ~1330px */
+    @media screen and (max-width: 83em) {
+        .section-featured {
+            --v-gap: 2rem;
+        }
+    }
+}
+
 /****************/
 /**HERO SECTION**/
 /****************/
@@ -43,6 +70,35 @@
         max-width: 120rem;
         margin: 4rem auto;
     }
+
+    .hero-image-box {
+        padding: 1rem;
+    }
+}
+
+/* ~ 900px */
+@media screen and (max-width: 56em) {
+    .section-hero {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 4rem;
+    }
+
+    .hero-text-box {
+        text-align: center;
+        align-items: center;
+        padding-inline: 4rem;
+    }
+
+    .delivery-imgs {
+        margin-inline: auto;
+    }
+
+    .hero-image-box {
+        width: 60%;
+        border: none;
+    }
+
 }
 
 /****************/
@@ -50,8 +106,9 @@
 /****************/
 /* ~1200px */
 @media screen and (max-width: 75em) {
-
-
+    .section-how {
+        padding: 2rem;
+    }
 
     .step-img img {
         width: 45%;
@@ -62,9 +119,99 @@
     }
 }
 
+/* ~ 900px */
+@media screen and (max-width: 56em) {
+
+
+    .step-number {
+        font-size: 5.5rem;
+    }
+}
+
+
+/***********************/
+/* MEALS SECTION*/
+/***********************/
+/* ~ 900px */
+@media screen and (max-width: 56em) {
+    .section-meals {}
+
+
+    /* the cards */
+    .section-meals .container:nth-child(2) {
+        --columns: 2;
+        row-gap: 3rem;
+    }
+
+    .meal-card {
+        width: 75%;
+    }
+
+    .diets {
+        grid-column: 1/-1;
+    }
+
+    .diets-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .diets-list li {
+        flex: 33.33%;
+    }
+}
+
+
+/***********************/
+/* TESTIMONIALS SECTION*/
+/***********************/
+
+/* ~1330px */
+@media screen and (max-width: 83em) {
+
+    .testimonials-container {
+        padding: 2rem;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+}
+
+
+/* ~ 900px */
+@media screen and (max-width: 56em) {
+    .section-testimonials {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .testimonials-container {
+        align-items: center;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+
 /***********************/
 /* PRICING SECTION*/
 /***********************/
+/* ~1330px */
+@media screen and (max-width: 83em) {
+    .plan-content {
+        padding-block: 3rem;
+    }
+}
+
 /* ~1200px */
 @media screen and (max-width: 75em) {
     .section-pricing {
@@ -72,9 +219,48 @@
     }
 
     .plan-details {
-        font-size: var(--fs-300);
+        width: 60vw;
+        font-size: var(--fs-400);
+    }
+
+    /* ~ 900px */
+    @media screen and (max-width: 56em) {
+        .features {
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            gap: 1rem 0;
+        }
+
+        .feature {
+            width: 80%;
+        }
     }
 }
+
+/***********************/
+/* CTA SECTION*/
+/***********************/
+/* ~ 900px */
+@media screen and (max-width: 56em) {
+    .section-cta {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .cta-text-box {
+        padding: 2rem;
+    }
+
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-btn {
+        margin-top: 10%;
+    }
+}
+
+
+
 
 /**********************/
 /* FOOTER*/
