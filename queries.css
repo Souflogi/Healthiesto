@@ -85,7 +85,7 @@
         padding: 6rem;
         /* hide */
         transform: translateX(100%);
-        opacity: 0;
+        opacity: 1;
         transition: all .4s;
         visibility: hidden;
         pointer-events: none;
@@ -197,12 +197,27 @@
 @media screen and (max-width: 56em) {
 
 
+
     .step-number {
         font-size: 5.5rem;
     }
+
+
 }
 
+/* ~ 748px */
+@media screen and (max-width: 47em) {
+    .step {
+        flex-direction: column;
+        gap: 4rem;
+        padding-block-start: 8rem;
+    }
 
+    .step-text-box {
+        order: -1;
+    }
+
+}
 
 
 
@@ -238,6 +253,27 @@
     }
 }
 
+/* ~ 748px */
+@media screen and (max-width: 47em) {
+
+    /* the cards */
+    .section-meals .container:nth-child(2) {
+        --columns: 1;
+        row-gap: 4rem;
+    }
+
+    .meal-card {
+        width: 65%;
+    }
+
+    .diets-list {
+        flex-direction: column;
+    }
+
+    .diets {
+        width: 65%;
+    }
+}
 
 
 
@@ -283,6 +319,25 @@
     }
 }
 
+/* ~ 748px */
+@media screen and (max-width: 47em) {
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item:nth-child(1),
+    .gallery-item:nth-child(2),
+    .gallery-item:nth-child(3),
+    .gallery-item:nth-child(4),
+    .gallery-item:nth-child(5),
+    .gallery-item:nth-child(6) {
+        display: none;
+    }
+}
 
 
 
@@ -324,6 +379,21 @@
             width: 80%;
         }
     }
+
+    /* ~ 748px */
+    @media screen and (max-width: 47em) {
+        .plans {
+            --columns: 1;
+        }
+
+        .plan {
+            width: 70%;
+        }
+
+        .features {
+            grid-template-columns: 1fr;
+        }
+    }
 }
 
 
@@ -351,6 +421,16 @@
     }
 }
 
+/* ~ 748px */
+@media screen and (max-width: 47em) {
+    .section-cta {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-img-box {
+        display: none;
+    }
+}
 
 
 
@@ -360,6 +440,32 @@
 /* ~1200px */
 @media screen and (max-width: 75em) {
     .footer {
-        padding: 3rem 0;
+        padding: 2rem 0;
+
     }
+
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+        --grid-g: 2rem;
+        row-gap: 3rem;
+    }
+
+    .logo-col {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .address-col {
+        grid-row: 2/3;
+        grid-column: 2/-1;
+    }
+
+
+
+    .footer-nav,
+    .logo-col,
+    .contacts {
+        gap: 1rem;
+    }
+
 }

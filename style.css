@@ -184,22 +184,21 @@
   border-bottom: 1px hsl(var(--clr-green), 0.5) solid;
   background: linear-gradient(-90deg,
       hsla(var(--clr-accent), 0.2) 10%,
-      hsla(var(--clr-dark), 0.6) 90%), url('./img/bc-img.jpg') no-repeat center center / cover;
+      hsla(var(--clr-dark), 0.6) 90%), url('./img/bc-img.jpg') no-repeat top center / cover;
+  background-attachment: fixed;
 }
 
 .step {
-  --columns: 2;
-  --grid-g: 4rem;
   align-items: center;
-  justify-items: center;
-  background-color: hsl(var(--clr-white), .9);
+  justify-content: center;
+  background-color: hsl(var(--clr-white), .75);
   border-radius: var(--brs-500);
 }
 
 .step-text-box {
   --flex-gap: 2rem;
   flex-direction: column;
-  width: 100%;
+  flex: 60%;
   color: hsl(var(--clr-dark));
   position: relative;
 }
@@ -236,16 +235,10 @@
   position: relative;
   z-index: 2;
   isolation: isolate;
+  flex: 40%;
 }
 
-/* .step-img::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 10%;
-  background-color: hsl(var(--clr-accent), 0.5);
-  border-radius: 50%;
-} */
+
 
 .step-img img {
   display: block;
@@ -919,6 +912,7 @@ img {
 .footer-container {
   --columns: 5;
   --grid-g: 6rem;
+  justify-items: center;
   color: hsl(var(--clr-white), .7)
 }
 
