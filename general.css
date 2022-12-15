@@ -103,9 +103,9 @@ body {
   font-weight: 400;
   color: hsl(var(--clr-white));
   background-color: hsl(var(--clr-green));
-  background-image: linear-gradient(-90deg,
-      hsl(var(--clr-green))0%,
-      hsl(var(--clr-gray)) 30%,
+  background-image: linear-gradient(90deg,
+      hsl(var(--clr-dark))0%,
+      hsl(var(--clr-gray)) 40%,
       hsl(var(--clr-dark)) 100%);
   background-repeat: no-repeat;
   background-position: center;

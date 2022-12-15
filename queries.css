@@ -38,27 +38,97 @@
     html {
         font-size: 50%;
     }
+}
 
-    /****************/
-    /**HEADER**/
-    /****************/
-    /* ~1330px */
-    @media screen and (max-width: 83em) {
-        .main-nav {
-            gap: 3rem;
-        }
-    }
 
-    /***********************/
-    /* FEATURED SECTION*/
-    /***********************/
-    /* ~1330px */
-    @media screen and (max-width: 83em) {
-        .section-featured {
-            --v-gap: 2rem;
-        }
+
+
+
+/****************/
+/**HEADER**/
+/****************/
+/* ~1330px */
+@media screen and (max-width: 83em) {
+    .main-nav {
+        gap: 3rem;
     }
 }
+
+/* ~ 900px */
+@media screen and (max-width: 56em) {
+    .btn-mobile-nav {
+        display: block;
+    }
+
+    .nav-open .main-nav {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+
+    .main-nav {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: hsl(var(--clr-dark), .95);
+        padding: 6rem;
+        /* hide */
+        transform: translateX(100%);
+        opacity: 0;
+        transition: all .4s;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+
+    .main-nav-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: var(--fs-600);
+    }
+
+    .main-nav .btn {
+        font-size: var(--fs-600);
+        padding: 1.5rem 2rem;
+    }
+}
+
+
+
+
+
+/***********************/
+/* FEATURED SECTION*/
+/***********************/
+/* ~1330px */
+@media screen and (max-width: 83em) {
+    .section-featured {
+        --v-gap: 2rem;
+    }
+}
+
+
+
+
 
 /****************/
 /**HERO SECTION**/
@@ -101,6 +171,10 @@
 
 }
 
+
+
+
+
 /****************/
 /**HOW SECTION**/
 /****************/
@@ -127,6 +201,9 @@
         font-size: 5.5rem;
     }
 }
+
+
+
 
 
 /***********************/
@@ -160,6 +237,11 @@
         flex: 33.33%;
     }
 }
+
+
+
+
+
 
 
 /***********************/
@@ -202,6 +284,8 @@
 }
 
 
+
+
 /***********************/
 /* PRICING SECTION*/
 /***********************/
@@ -225,6 +309,11 @@
 
     /* ~ 900px */
     @media screen and (max-width: 56em) {
+
+        .plan {
+            width: 95%;
+        }
+
         .features {
             grid-template-columns: repeat(2, 1fr);
             justify-items: center;
@@ -236,6 +325,9 @@
         }
     }
 }
+
+
+
 
 /***********************/
 /* CTA SECTION*/

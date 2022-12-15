@@ -4,15 +4,32 @@
 .header {
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 1.5rem 4rem;
   position: sticky;
   top: 0;
   z-index: 999;
   isolation: isolate;
-  background-color: hsl(var(--clr-gray));
+
 }
 
-.main-nav {
+
+.btn-mobile-nav {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  font-size: 5rem;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+
+.main-nav-list {
   gap: 5rem;
   border-radius: var(--brs-400);
   align-items: center;
