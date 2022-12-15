@@ -116,16 +116,6 @@
 
 
 
-/***********************/
-/* FEATURED SECTION*/
-/***********************/
-/* ~1330px */
-@media screen and (max-width: 83em) {
-    .section-featured {
-        --v-gap: 2rem;
-    }
-}
-
 
 
 
@@ -169,6 +159,27 @@
         border: none;
     }
 
+}
+
+/* ~ 748px */
+@media screen and (max-width: 47em) {
+    .hero-text-box {
+        padding-inline: 0;
+    }
+}
+
+/***********************/
+/* FEATURED SECTION*/
+/***********************/
+/* ~1330px */
+@media screen and (max-width: 83em) {
+    .section-hero {
+        padding: 0 1rem;
+    }
+
+    .section-featured {
+        --v-gap: 2rem;
+    }
 }
 
 
