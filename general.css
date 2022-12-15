@@ -95,6 +95,7 @@ html {
   box-sizing: border-box;
   /* 1rem =10px => 62.5% of 16px */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -110,8 +111,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  overflow-x: hidden;
   position: relative;
+  overflow-x: hidden;
 }
 
 *,
