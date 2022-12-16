@@ -157,8 +157,24 @@
 
 /* ~ 748px */
 @media screen and (max-width: 47em) {
+
+    .section-hero {
+        margin: 2rem 0 0 0;
+    }
+
+    .delivery-imgs img {
+        width: 5rem;
+    }
+
     .hero-text-box {
         padding-inline: 0;
+    }
+
+    .hero-image-box {
+        width: 100%;
+        max-width: 50rem;
+        height: 20rem;
+        padding: 0;
     }
 }
 
@@ -266,17 +282,16 @@
         row-gap: 4rem;
     }
 
-    .meal-card {
+    .meal-card,
+    .diets {
         width: 65%;
+        min-width: 35rem;
     }
 
     .diets-list {
         flex-direction: column;
     }
 
-    .diets {
-        width: 65%;
-    }
 }
 
 
@@ -389,7 +404,7 @@
         }
 
         .plan {
-            width: 90%;
+            max-width: 50rem;
         }
 
         .features {
@@ -430,7 +445,9 @@
     }
 
     .cta-img-box {
-        display: none;
+        grid-row: 1/2;
+        height: 35rem;
+        background-image: linear-gradient(to top, hsl(var(--clr-accent)), 20%, hsl(var(--clr-dark), .4)), url(./img/cta-bg.jpg);
     }
 }
 
