@@ -81,7 +81,7 @@
         top: 0;
         width: 100%;
         height: 100vh;
-        background-color: hsl(var(--clr-dark), .95);
+        background-color: hsl(var(--clr-green), .95);
         padding: 6rem;
         /* hide */
         transform: translateX(100%);
@@ -447,7 +447,7 @@
     .cta-img-box {
         grid-row: 1/2;
         height: 35rem;
-        background-image: linear-gradient(to top, hsl(var(--clr-accent)), 20%, hsl(var(--clr-dark), .4)), url(./img/cta-bg.jpg);
+        background-image: linear-gradient(to top, hsl(var(--clr-green)), 20%, hsl(var(--clr-dark), .4)), url(../img/cta-bg.jpg);
     }
 }
 

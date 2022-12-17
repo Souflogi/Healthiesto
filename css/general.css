@@ -10,16 +10,18 @@
   grey: #536874;
   green: #bcd2c5;
   accent: #f09042;
-  white: #f8f7f7; */
+  white: #FDFDFD; */
 
-  --clr: #e76e50;
-  --clr-2: #282d48;
+  --clr: #cfdece;
+  --clr-2: #157e4f;
+  --clr-2: #2e2e2e;
+  --clr-2: rgb(252, 252, 252);
 
-  --clr-dark: 231, 29%, 22%;
-  --clr-gray: 202, 17%, 39%;
-  --clr-green: 146, 20%, 78%;
-  --clr-accent: 9, 55%, 60%;
-  --clr-white: 204, 60%, 95%;
+
+  --clr-dark: 0, 0%, 18%;
+  --clr-green: 116, 20%, 84%;
+  --clr-accent: 153, 71%, 29%;
+  --clr-white: 0, 0%, 99%;
 
   /* background-color: #bbd2c5;
 background-image: linear-gradient(225deg, #bbd2c5 0%, #536976 46%, #292e49 100%);
@@ -87,9 +89,6 @@ background-image: linear-gradient(225deg, #bbd2c5 0%, #536976 46%, #292e49 100%)
   --brs-600: 2rem;
 }
 
-@media screen and (min-width: 120rem) {
-  :root {}
-}
 
 html {
   box-sizing: border-box;
@@ -104,10 +103,10 @@ body {
   font-weight: 400;
   color: hsl(var(--clr-white));
   background-color: hsl(var(--clr-green));
-  background-image: linear-gradient(90deg,
+  /* background-image: linear-gradient(90deg,
       hsl(var(--clr-dark))0%,
-      hsl(var(--clr-gray)) 40%,
-      hsl(var(--clr-dark)) 100%);
+      hsl(var(--clr-green)) 70%,
+      hsl(var(--clr-dark)) 100%); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -218,9 +217,7 @@ button {
   color: hsl(var(--clr-accent));
 }
 
-.clr-gray {
-  color: hsl(var(--clr-gray));
-}
+
 
 .clr-green {
   color: hsl(var(--clr-green));
@@ -242,22 +239,21 @@ button {
 .btn-full:link,
 .btn-full:visited {
   color: hsl(var(--clr-white));
-  background-image: linear-gradient(225deg,
-      rgba(244, 245, 244, 0.514) 50%,
-      rgba(83, 105, 118, 0.658) 100%);
+  background-image: linear-gradient(to top,
+      hsl(var(--clr-dark), .7) 50%,
+      hsl(var(--clr-green)) 100%);
 }
 
 .btn-full:hover {
-  background-color: hsl(var(--clr-accent));
-  background-image: linear-gradient(100deg,
-      rgb(83, 105, 118, 0.2) 0%,
-      rgb(244, 245, 244, 0.2) 30%);
+  background-image: linear-gradient(to top,
+      hsl(var(--clr-accent)) 50%,
+      hsl(var(--clr-green)) 100%);
 }
 
 .btn-outline:visited,
 .btn-outline:link {
   color: var(--clr-white);
-  border: hsl(var(--clr-white), 0.1) solid 1px;
+  border: hsl(var(--clr-dark), 0.5) solid 1px;
 }
 
 .btn-outline:hover {
@@ -271,7 +267,7 @@ button {
 /**************/
 
 .glass-bg {
-  background-color: rgba(252, 252, 252, 0.24);
+  background-color: hsl(var(--clr-dark), .3);
   backdrop-filter: blur(4px);
 }
 
