@@ -4,7 +4,7 @@
 .header {
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 4rem;
+  padding-inline: 2rem;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -718,18 +718,7 @@ img {
   width: 100%;
 }
 
-/************/
-.plan-details {
-  text-align: center;
-  font-size: var(--fs-900);
-  font-weight: var(--fw-larg);
-  letter-spacing: var(--ls-300);
-  line-height: var(--lh-500);
-  color: hsl(var(--clr-dark));
-  background-color: hsl(var(--clr-green));
-  padding: 1rem;
-  border-radius: 1rem;
-}
+
 
 /************/
 
@@ -778,12 +767,13 @@ img {
 
 .plan-details {
   text-align: center;
-  font-size: var(--fs-450);
+  font-size: var(--fs-400);
   font-weight: var(--fw-larg);
   letter-spacing: var(--ls-300);
-  color: hsl(var(--clr-dark));
-  background-color: hsl(var(--clr-white), .8);
-  padding: .4rem;
+  line-height: var(--lh-500);
+  color: hsl(var(--clr-dark), .8);
+  background-color: hsl(var(--clr-green), .8);
+  padding: .8rem;
   max-width: 120rem;
   margin-inline: auto;
   border-radius: 1rem;
@@ -907,18 +897,19 @@ img {
 
 .footer {
 
-  background-image: linear-gradient(to top right, hsl(var(--clr-dark), .9), rgba(0, 0, 0, 0.7)), url(../img/footer.svg);
+  background-image: linear-gradient(to bottom, hsl(var(--clr-white), .6), hsl(var(--clr-green), .8)), url(../img/footer.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 6rem 0;
+  border-top: 1px solid hsl(var(--clr-dark), .2);
 }
 
 .footer-container {
   --columns: 5;
   --grid-g: 6rem;
   justify-items: center;
-  color: hsl(var(--clr-white), .7)
+  color: hsl(var(--clr-dark), .9)
 }
 
 .footer-heading {
@@ -944,9 +935,9 @@ img {
 }
 
 .logo-col img {
-  background-color: hsl(var(--clr-white), .4);
+  /* background-color: hsl(var(--clr-white), .4);
   padding: 2%;
-  border-radius: var(--brs-400);
+  border-radius: var(--brs-400); */
 }
 
 .social-links {
