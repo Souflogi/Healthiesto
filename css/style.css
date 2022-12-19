@@ -12,12 +12,23 @@
   background-color: hsl(var(--clr-white));
 }
 
+.sticky-header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: min-content;
+  background-color: hsl(var(--clr-white), 0.4);
+  backdrop-filter: blur(20px);
+}
+
 
 .btn-mobile-nav {
   background-color: transparent;
   border: none;
   cursor: pointer;
   display: none;
+  z-index: 999;
 }
 
 .icon-mobile-nav {

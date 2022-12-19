@@ -12,19 +12,19 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/queries.css">
     <script src="./js/script.js" defer></script>
-    <title>OmniFood</title>
+    <title>Healthiesto</title>
 </head>
 
 <body>
     <header class="header flex ">
-        <div class="logo"> <a href="#"><img src="./img/healthiesto-logo-dark.png" alt=""></a></div>
+        <div class="logo"> <a href="#hero"><img src="./img/healthiesto-logo-dark.png" alt=""></a></div>
         <nav class="main-nav">
             <ul class="main-nav-list flex ">
-                <li><a class="main-nav-link" href="#">How it works</a></li>
-                <li><a class="main-nav-link" href="#">Meals</a></li>
-                <li><a class="main-nav-link" href="#">testimonials</a></li>
-                <li><a class="main-nav-link" href="#">Pricing</a></li>
-                <li><a class="btn btn-full" href="#">Try for free</a></li>
+                <li><a class="main-nav-link" href="#how">How it works</a></li>
+                <li><a class="main-nav-link" href="#meals">Meals</a></li>
+                <li><a class="main-nav-link" href="#testimonials">testimonials</a></li>
+                <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+                <li><a class="btn btn-full" href="#cta">Try for free</a></li>
             </ul>
         </nav>
         <button class="btn-mobile-nav">
@@ -36,7 +36,7 @@
 
         <!-- HERO SECTION -->
 
-        <section class="section-hero  grid">
+        <section id="hero" class="section-hero  grid">
 
             <div class="hero-text-box v-flow clr-dark">
                 <h1 class="heading-primary ">looking good, fresh, <span>healthy</span> and dilevred fast!</h1>
@@ -46,8 +46,8 @@
                     personal tastes and
                     nutritional needs.
                 <div>
-                    <a href="#" class="btn btn-full margin-r" style="--mr:4rem">Start Now</a>
-                    <a href="#" class="btn btn-outline">Learn More &darr;</a>
+                    <a href="#cta" class="btn btn-full margin-r" style="--mr:4rem">Start Now</a>
+                    <a href="#how" class="btn btn-outline">Learn More &darr;</a>
                 </div>
 
                 <div class="delivery">
@@ -87,7 +87,7 @@
 
         <!-- HOW IT WORKS SECTION -->
 
-        <section class="section-how v-flow">
+        <section id="how" class="section-how v-flow">
             <div class="container">
                 <span class="subheading underline clr-accent">How it works</span>
                 <br />
@@ -100,7 +100,7 @@
                         <h3 class="heading-tertiary ">Tell us what you like (and what not):</h3>
                     </div>
                     <p class="step-text">
-                        Never again waste time thinking about what to eat! Omnifood AI will create a 100%
+                        Never again waste time thinking about what to eat! Healthiesto AI will create a 100%
                         personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins
                         you need, no matter
                         what diet you follow!
@@ -122,7 +122,7 @@
                         <h3 class="heading-tertiary ">Approve your weekly meal plan:</h3>
                     </div>
                     <p class="step-text">
-                        Once per week, approve the meal plan generated for you by Omnifood AI. You can change
+                        Once per week, approve the meal plan generated for you by Healthiesto AI. You can change
                         ingredients, swap entire meals, or even add your own recipes.
                     </p>
                 </div>
@@ -134,7 +134,7 @@
                         <h3 class="heading-tertiary ">Receive meals at convenient time:</h3>
                     </div>
                     <p class="step-text">
-                        Never again waste time thinking about what to eat! Omnifood AI will create a 100%
+                        Never again waste time thinking about what to eat! Healthiesto AI will create a 100%
                         personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins
                         you need, no matter
                         what diet you follow!
@@ -151,11 +151,11 @@
 
         <!-- MEALS SECTION -->
 
-        <section class="section-meals v-flow">
+        <section id="meals" class="section-meals v-flow">
             <div class="container txa-center">
                 <span class="subheading   clr-accent">simple meals</span>
                 <br />
-                <h2 class="heading-secondary clr-dark  ">Omnifood AI chooses from 5,000+ recipes</h2>
+                <h2 class="heading-secondary clr-dark  ">Healthiesto AI chooses from 5,000+ recipes</h2>
             </div>
             <div class="container grid">
                 <div class="meal-card   ">
@@ -260,7 +260,7 @@
 
         <!-- TESTIMONIALS SECTION-->
 
-        <section class="section-testimonials ">
+        <section id="testimonials" class="section-testimonials ">
             <div class="testimonials-container">
                 <div class="testimonilas-title"><span class="subheading   clr-accent">testimonials</span>
                     <br />
@@ -291,7 +291,8 @@
                     <figure class="testimonial">
                         <i class="icon fa-sharp fa-solid fa-quote-right"></i>
                         <div class="img"><img src="./img/customers/steve.jpg" alt="customer"></div>
-                        <blockquote> Omnifood is a life saver! I just started a company, so there's no time for cooking.
+                        <blockquote> Healthiesto is a life saver! I just started a company, so there's no time for
+                            cooking.
                             I couldn't live without my daily
                             meals now!
                         </blockquote>
@@ -300,7 +301,8 @@
                     <figure class="testimonial">
                         <i class="icon fa-sharp fa-solid fa-quote-right"></i>
                         <div class="img"><img src="./img/customers/hannah.jpg" alt="customer"></div>
-                        <blockquote> I got Omnifood for the whole family, and it frees up so much time! Plus, everything
+                        <blockquote> I got Healthiesto for the whole family, and it frees up so much time! Plus,
+                            everything
                             is
                             organic and vegan and without
                             plastic.
@@ -328,7 +330,7 @@
             </div>
         </section>
         <!-- PRICING SECTION -->
-        <section class="section-pricing v-flow">
+        <section id="pricing" class="section-pricing v-flow">
             <div class="container txa-center glass-bg">
                 <span class="subheading   clr-accent">Our pricing</span>
                 <br />
@@ -465,7 +467,7 @@
 
         <!-- SECTION CTA -->
 
-        <section class="section-cta">
+        <section id="cta" class="section-cta">
             <div class="cta-text-box">
                 <h2 class="heading-secondary clr-accent">
                     First meal for free!
@@ -504,7 +506,7 @@
     <footer class="footer">
         <div class="container grid footer-container">
             <div class="logo-col">
-                <a class="logo" href="#">
+                <a class="logo" href="#hero">
                     <img src="./img/healthiesto-logo-dark.png" alt="">
                 </a>
 
@@ -531,7 +533,7 @@
                         <a href="tel: 415-201-6370">415-201-6370
                         </a>
                         <br />
-                        <a href="mailto:hello@omnifood.com">hello@omnifood.com</a>
+                        <a href="mailto:hello@healthiesto.com">hello@healthiesto.com</a>
                     </p>
                 </address>
 
@@ -549,7 +551,7 @@
             <nav class="nav-col">
                 <p class="footer-heading">Company</p>
                 <ul class="footer-nav">
-                    <li><a href="#">About Omnifood</a></li>
+                    <li><a href="#">About Healthiesto</a></li>
                     <li><a href="#">For Business</a></li>
                     <li><a href="#">Cooking partners</a></li>
                     <li><a href="#">Careers</a></li>

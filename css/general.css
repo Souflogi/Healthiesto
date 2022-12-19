@@ -95,6 +95,7 @@ html {
   /* 1rem =10px => 62.5% of 16px */
   font-size: 62.5%;
   overflow-x: hidden;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -103,13 +104,8 @@ body {
   font-weight: 400;
   color: hsl(var(--clr-white));
   background-color: hsl(var(--clr-green));
-  /* background-image: linear-gradient(90deg,
-      hsl(var(--clr-dark))0%,
-      hsl(var(--clr-green)) 70%,
-      hsl(var(--clr-dark)) 100%); */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+
+
   position: relative;
   overflow-x: hidden;
 }
