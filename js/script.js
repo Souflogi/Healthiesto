@@ -95,3 +95,57 @@ const NavObserer = new IntersectionObserver(
 );
 
 NavObserer.observe(document.querySelector(".section-hero"));
+
+//*********************Revealing Steps on Scroll***************
+
+const stepsEl = document.querySelectorAll(".step");
+
+const stepObserverCallback = (entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.remove("hidden-step");
+      observer.unobserve(entry.target);
+    }
+  });
+};
+
+const stepObserverOptions = {
+  root: null,
+  threshold: 0.3,
+};
+
+const stepObserver = new IntersectionObserver(
+  stepObserverCallback,
+  stepObserverOptions
+);
+
+stepsEl.forEach(step => {
+  stepObserver.observe(step);
+});
+
+//*********************Revealing plan head on Scroll***************
+
+const planHeads = document.querySelectorAll(".plan-head");
+
+const planObserverCallback = (entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.remove("plan-head-hidden");
+      observer.unobserve(entry.target);
+    }
+  });
+};
+
+const planObserverOptions = {
+  root: null,
+  threshold: 1,
+};
+
+const planObserver = new IntersectionObserver(
+  planObserverCallback,
+  planObserverOptions
+);
+
+planHeads.forEach(step => {
+  planObserver.observe(step);
+});

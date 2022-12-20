@@ -210,6 +210,12 @@
   justify-content: center;
   background-color: hsl(var(--clr-white), .9);
   border-radius: var(--brs-500);
+  transition: all .2s ease-in-out;
+}
+
+.hidden-step {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 .step-text-box {
@@ -580,8 +586,9 @@ img {
   width: 75%;
 }
 
-.plan:hover .plan-head {
-  transform: translateY(0px);
+.plan-head-hidden {
+  transform: translateY(60%);
+
 }
 
 /* *** */
@@ -590,10 +597,8 @@ img {
   position: relative;
   color: currentColor;
   isolation: isolate;
-
-  /* rexp */
-  transform: translateY(60%);
   transition: all .4s ease-in-out;
+
 }
 
 .plan-head::after {
@@ -608,6 +613,7 @@ img {
   transform: translateX(-50%);
   border-radius: 0 20% 0 0;
   box-shadow: 0 0 5px hsl(var(--clr-dark), .3);
+
 }
 
 .plan-title {
