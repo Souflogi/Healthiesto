@@ -126,7 +126,7 @@
 @media screen and (max-width: 83em) {
     .section-hero {
         max-width: 120rem;
-        margin: 4rem auto;
+        margin: 0 auto;
     }
 
     .hero-image-box {
@@ -162,9 +162,7 @@
 /* ~ 748px */
 @media screen and (max-width: 47em) {
 
-    .section-hero {
-        margin: 2rem 0 0 0;
-    }
+    .section-hero {}
 
     .delivery-imgs img {
         width: 5rem;
@@ -187,9 +185,7 @@
 /***********************/
 /* ~1330px */
 @media screen and (max-width: 83em) {
-    .section-hero {
-        padding: 0 1rem;
-    }
+
 
     .section-featured {
         --v-gap: 2rem;

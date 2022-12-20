@@ -92,8 +92,8 @@
 /****************/
 .section-hero {
   max-width: 130rem;
-  margin: 8rem auto;
-  padding: 0 2rem;
+  margin: 0 auto;
+  padding: 8rem 2rem;
   align-items: center;
   /* justify-items: center; */
   position: relative;

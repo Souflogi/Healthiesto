@@ -20,9 +20,9 @@ const ScrollElIntoView = El => {
 };
 
 //Smooth scrolling for navigation
-const navListEl = document.querySelector(".main-nav-list");
+const mainNavEl = document.querySelector(".main-nav");
 
-navListEl.addEventListener("click", e => {
+mainNavEl.addEventListener("click", e => {
   e.preventDefault();
 
   //if mobile menu is open close it , and enable scrolling
@@ -75,8 +75,14 @@ const NavObsererCallback = (entries, _) => {
   const [entry] = entries;
 
   if (!entry.isIntersecting) {
+    /* to avoid layout jumping we add the height of the header to the hero section before it gets out of the stack*/
+    entry.target.style.marginTop = `${headerEl.offsetHeight}px`;
+
     headerEl.classList.add("sticky-header");
-  } else headerEl.classList.remove("sticky-header");
+  } else {
+    headerEl.classList.remove("sticky-header");
+    entry.target.style.marginTop = "0px";
+  }
 };
 const NavObsererOptions = {
   root: null,
