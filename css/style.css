@@ -10,18 +10,22 @@
   z-index: 999;
   isolation: isolate;
   background-color: hsl(var(--clr-white));
+  box-shadow: 0 1.2rem 1.4rem hsl(var(--clr-dark), .02);
+
 }
 
 .sticky-header {
   position: fixed;
   top: 0;
-  bottom: 0;
-  width: 100vw;
-  height: min-content;
+  left: 0;
+  width: 100%;
   background-color: hsl(var(--clr-white), 0.4);
   backdrop-filter: blur(20px);
 }
 
+.fixed-body {
+  position: fixed;
+}
 
 .btn-mobile-nav {
   background-color: transparent;
@@ -75,7 +79,7 @@
 }
 
 .logo {
-  width: 15rem;
+  width: 13rem;
   overflow: hidden;
 }
 
