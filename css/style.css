@@ -79,12 +79,14 @@
 }
 
 .logo {
-  width: 13rem;
+  width: 11rem;
   overflow: hidden;
+  margin: 1rem;
 }
 
 .logo img {
   width: 100%;
+  height: 100%;
 }
 
 /****************/
@@ -139,12 +141,13 @@
   font-size: var(--fs-300);
   color: inherit;
   letter-spacing: var(--ls-300);
-  font-weight: 600;
+  font-weight: var(--fw-small);
   margin-top: 0.5rem;
 }
 
 .delivery-text span {
-  color: hsl(var(--clr-accent));
+
+  font-weight: var(--fw-xlarg);
 }
 
 .hero-image-box {
@@ -201,7 +204,7 @@
   border-bottom: 1px hsl(var(--clr-green), 0.5) solid;
   background: linear-gradient(-90deg,
       hsla(var(--clr-green), 0.2) 10%,
-      hsla(var(--clr-dark), 0.6) 90%), url('../img/bc-img.jpg') no-repeat top center / cover;
+      hsla(var(--clr-dark), 0.6) 90%), url('../img/bc-img.webp') no-repeat top center / cover;
   background-attachment: fixed;
 }
 
@@ -431,9 +434,8 @@ img {
 .link:visited {
   display: inline-block;
   text-decoration: none;
-  color: hsl(var(--clr-white));
-  font-size: var(--fs-500);
-  color: hsl(var(--clr-accent), .8);
+  font-size: var(--fs-450);
+  color: hsl(var(--clr-dark), .8);
   transition: all .2s ease-in;
 }
 
@@ -526,13 +528,15 @@ img {
   font-size: var(--fs-400);
   line-height: var(--lh-500);
   letter-spacing: var(--ls-200);
+  font-weight: var(--fw-larg);
   /* font-style: italic; */
 }
 
 .testimonials .name {
   letter-spacing: var(--ls-200);
   font-size: var(--fs-300);
-  color: hsl(var(--clr-dark), 0.5);
+  font-weight: var(--fw-larg);
+  color: hsl(var(--clr-dark), 0.8);
   align-self: end;
 }
 
@@ -905,7 +909,7 @@ img {
 
 /* ******* */
 .cta-img-box {
-  background-image: linear-gradient(to right, hsl(var(--clr-green)), 20%, hsl(var(--clr-dark), .4)), url(../img/cta-bg.jpg);
+  background-image: linear-gradient(to right, hsl(var(--clr-green)), 20%, hsl(var(--clr-dark), .4)), url(../img/cta-bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
